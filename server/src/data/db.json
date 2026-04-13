@@ -1,0 +1,340 @@
+{
+  "hospitals": [
+    {
+      "_id": "549e9429-7ab2-4ea5-9ffa-439defa1e2eb",
+      "createdAt": "2026-04-13T08:34:25.786Z",
+      "updatedAt": "2026-04-13T08:34:25.786Z",
+      "name": "GreenLife Multispeciality Hospital",
+      "location": {
+        "city": "Delhi",
+        "address": "Sector 18, Dwarka, Delhi"
+      },
+      "specialties": [
+        "Cardiology",
+        "Orthopedics",
+        "Pediatrics"
+      ],
+      "phone": "+91 98765 43210",
+      "rating": 4.5,
+      "imageUrl": "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=1200&q=60"
+    },
+    {
+      "_id": "8e0fbd4c-dfa3-4e5b-884b-b851a55d5d0c",
+      "createdAt": "2026-04-13T08:34:25.787Z",
+      "updatedAt": "2026-04-13T08:34:25.787Z",
+      "name": "BlueCare City Hospital",
+      "location": {
+        "city": "Mumbai",
+        "address": "Andheri West, Mumbai"
+      },
+      "specialties": [
+        "Dermatology",
+        "ENT",
+        "General Medicine"
+      ],
+      "phone": "+91 99999 11111",
+      "rating": 4.3,
+      "imageUrl": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1200&q=60"
+    },
+    {
+      "_id": "8543dc7d-4f6a-4b7f-b726-ff97258818fe",
+      "createdAt": "2026-04-13T08:34:25.787Z",
+      "updatedAt": "2026-04-13T08:34:25.787Z",
+      "name": "Apollo-style Specialty Clinic",
+      "location": {
+        "city": "Bengaluru",
+        "address": "Indiranagar, Bengaluru"
+      },
+      "specialties": [
+        "Diabetology",
+        "Neurology",
+        "Psychiatry"
+      ],
+      "phone": "+91 88888 22222",
+      "rating": 4.4,
+      "imageUrl": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&w=1200&q=60"
+    }
+  ],
+  "doctors": [
+    {
+      "_id": "b80f098d-95e2-4c3d-a880-82fb02e7b3ab",
+      "createdAt": "2026-04-13T08:34:25.797Z",
+      "updatedAt": "2026-04-13T08:34:25.797Z",
+      "name": "Dr. Anil Mehra",
+      "specialty": "Cardiology",
+      "hospitalId": "549e9429-7ab2-4ea5-9ffa-439defa1e2eb",
+      "experienceYears": 12,
+      "fee": 800,
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=800&q=60",
+      "availability": [
+        {
+          "day": "Mon",
+          "slots": [
+            "10:00",
+            "10:30",
+            "11:00"
+          ]
+        },
+        {
+          "day": "Wed",
+          "slots": [
+            "16:00",
+            "16:30"
+          ]
+        }
+      ],
+      "isTelemedicineAvailable": true
+    },
+    {
+      "_id": "9cb8bdd9-43e8-43d7-9a60-cf4b5c425392",
+      "createdAt": "2026-04-13T08:34:25.797Z",
+      "updatedAt": "2026-04-13T08:34:25.797Z",
+      "name": "Dr. Sana Qureshi",
+      "specialty": "Dermatology",
+      "hospitalId": "8e0fbd4c-dfa3-4e5b-884b-b851a55d5d0c",
+      "experienceYears": 8,
+      "fee": 700,
+      "languages": [
+        "English",
+        "Hindi",
+        "Marathi"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=800&q=60",
+      "availability": [
+        {
+          "day": "Tue",
+          "slots": [
+            "09:00",
+            "09:30",
+            "10:00"
+          ]
+        },
+        {
+          "day": "Thu",
+          "slots": [
+            "18:00",
+            "18:30"
+          ]
+        }
+      ],
+      "isTelemedicineAvailable": true
+    },
+    {
+      "_id": "d5963c7a-b53b-4de4-84f6-4d26eb000688",
+      "createdAt": "2026-04-13T08:34:25.797Z",
+      "updatedAt": "2026-04-13T08:34:25.797Z",
+      "name": "Dr. Rohan Iyer",
+      "specialty": "Neurology",
+      "hospitalId": "8543dc7d-4f6a-4b7f-b726-ff97258818fe",
+      "experienceYears": 10,
+      "fee": 1000,
+      "languages": [
+        "English",
+        "Kannada",
+        "Hindi"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=800&q=60",
+      "availability": [
+        {
+          "day": "Fri",
+          "slots": [
+            "11:00",
+            "11:30",
+            "12:00"
+          ]
+        }
+      ],
+      "isTelemedicineAvailable": false
+    }
+  ],
+  "bookings": [
+    {
+      "_id": "82e27000-d181-41fc-bfea-1a229571aa7e",
+      "createdAt": "2026-04-13T08:34:25.981Z",
+      "updatedAt": "2026-04-13T08:34:25.981Z",
+      "userId": "86084568-6cd5-4f2b-bee2-a0b349699208",
+      "doctorId": "b80f098d-95e2-4c3d-a880-82fb02e7b3ab",
+      "hospitalId": "549e9429-7ab2-4ea5-9ffa-439defa1e2eb",
+      "patientName": "Demo User",
+      "reason": "Chest discomfort during workout",
+      "appointmentDate": "2026-03-04T00:00:00.000Z",
+      "slot": "10:30",
+      "status": "completed",
+      "mode": "in_person"
+    },
+    {
+      "_id": "72c21eea-e388-46a6-b7c0-e714c4334c46",
+      "createdAt": "2026-04-13T08:34:25.981Z",
+      "updatedAt": "2026-04-13T08:34:25.981Z",
+      "userId": "86084568-6cd5-4f2b-bee2-a0b349699208",
+      "doctorId": "9cb8bdd9-43e8-43d7-9a60-cf4b5c425392",
+      "hospitalId": "8e0fbd4c-dfa3-4e5b-884b-b851a55d5d0c",
+      "patientName": "Demo User",
+      "reason": "Recurring skin allergy rash",
+      "appointmentDate": "2026-02-14T00:00:00.000Z",
+      "slot": "09:30",
+      "status": "completed",
+      "mode": "telemedicine"
+    }
+  ],
+  "users": [
+    {
+      "_id": "86084568-6cd5-4f2b-bee2-a0b349699208",
+      "createdAt": "2026-04-13T08:34:25.978Z",
+      "updatedAt": "2026-04-13T08:34:25.978Z",
+      "name": "Demo User",
+      "email": "demo@healthhub.com",
+      "passwordHash": "$2b$10$IYgyQBJ6PLUnRlwhuub14Ou4tUzUnutsU081ezzT1/KSi/Mn6jzKq",
+      "role": "user",
+      "medicalProfile": {
+        "bloodGroup": "O+",
+        "allergies": [
+          "Dust",
+          "Peanuts"
+        ],
+        "chronicConditions": [
+          "Mild Asthma"
+        ],
+        "medications": [
+          "Inhaler (SOS)"
+        ]
+      },
+      "medicalHistory": [
+        {
+          "id": "seed_history_1",
+          "diagnosis": "Mild Asthma",
+          "diagnosedOn": "2024-08-10",
+          "notes": "Symptoms are exercise induced; uses inhaler only when needed.",
+          "treatmentStatus": "ongoing",
+          "createdAt": "2026-04-13T08:34:25.977Z"
+        },
+        {
+          "id": "seed_history_2",
+          "diagnosis": "Seasonal Skin Allergy",
+          "diagnosedOn": "2025-06-03",
+          "notes": "Triggered during weather changes. Managed with antihistamines.",
+          "treatmentStatus": "monitoring",
+          "createdAt": "2026-04-13T08:34:25.977Z"
+        }
+      ],
+      "pathlabRecords": [
+        {
+          "id": "seed_lab_1",
+          "testName": "Complete Blood Count (CBC)",
+          "resultSummary": "Hemoglobin slightly low; follow-up advised.",
+          "testDate": "2026-02-11",
+          "labName": "City Diagnostics",
+          "reportUrl": "https://example.com/reports/cbc-demo-user"
+        },
+        {
+          "id": "seed_lab_2",
+          "testName": "Fasting Blood Sugar",
+          "resultSummary": "Within normal range.",
+          "testDate": "2026-01-21",
+          "labName": "HealthHub Labs",
+          "reportUrl": "https://example.com/reports/fbs-demo-user"
+        }
+      ]
+    }
+  ],
+  "bloodDonors": [
+    {
+      "_id": "c03c9c5f-6c7c-4ce5-ad20-d2ce5cd435e7",
+      "createdAt": "2026-04-13T08:34:25.802Z",
+      "updatedAt": "2026-04-13T08:34:25.802Z",
+      "name": "Rahul Singh",
+      "bloodGroup": "O+",
+      "phone": "9990001112",
+      "city": "Delhi",
+      "available": true
+    },
+    {
+      "_id": "210111be-2ff2-4276-9422-ce5f91cde462",
+      "createdAt": "2026-04-13T08:34:25.802Z",
+      "updatedAt": "2026-04-13T08:34:25.802Z",
+      "name": "Meera Nair",
+      "bloodGroup": "A+",
+      "phone": "9990001113",
+      "city": "Mumbai",
+      "available": true
+    },
+    {
+      "_id": "79908097-cadf-4ec0-ac99-d04c1ac2c18a",
+      "createdAt": "2026-04-13T08:34:25.802Z",
+      "updatedAt": "2026-04-13T08:34:25.802Z",
+      "name": "Kiran Rao",
+      "bloodGroup": "B-",
+      "phone": "9990001114",
+      "city": "Bengaluru",
+      "available": true
+    }
+  ],
+  "pharmacyItems": [
+    {
+      "_id": "9d7db1d1-9bfd-42c7-b492-deb11ddf4906",
+      "createdAt": "2026-04-13T08:34:25.813Z",
+      "updatedAt": "2026-04-13T08:34:25.813Z",
+      "name": "Paracetamol 500mg",
+      "brand": "MediCare",
+      "category": "Fever & Pain",
+      "price": 35,
+      "inStock": true
+    },
+    {
+      "_id": "b18375a5-59ee-42eb-b022-978b1613c414",
+      "createdAt": "2026-04-13T08:34:25.813Z",
+      "updatedAt": "2026-04-13T08:34:25.813Z",
+      "name": "Cetirizine 10mg",
+      "brand": "AllerFree",
+      "category": "Allergy",
+      "price": 45,
+      "inStock": true
+    },
+    {
+      "_id": "d4b9b24d-2094-4964-ad96-e0ee76ed215d",
+      "createdAt": "2026-04-13T08:34:25.813Z",
+      "updatedAt": "2026-04-13T08:34:25.813Z",
+      "name": "ORS Sachet",
+      "brand": "HydraPlus",
+      "category": "Digestive",
+      "price": 25,
+      "inStock": true
+    }
+  ],
+  "labTests": [
+    {
+      "_id": "2ae2fe2b-618f-4a60-845d-57c5d55665de",
+      "createdAt": "2026-04-13T08:34:25.821Z",
+      "updatedAt": "2026-04-13T08:34:25.821Z",
+      "name": "Complete Blood Count (CBC)",
+      "description": "Basic blood health indicators",
+      "price": 399,
+      "fastingRequired": false,
+      "turnaroundTime": "24 hours"
+    },
+    {
+      "_id": "501ff142-462e-4845-a90d-042947611374",
+      "createdAt": "2026-04-13T08:34:25.821Z",
+      "updatedAt": "2026-04-13T08:34:25.821Z",
+      "name": "Thyroid Profile (T3/T4/TSH)",
+      "description": "Thyroid screening panel",
+      "price": 699,
+      "fastingRequired": false,
+      "turnaroundTime": "24-48 hours"
+    },
+    {
+      "_id": "f127457a-181a-4520-90db-eab9d1b36b34",
+      "createdAt": "2026-04-13T08:34:25.821Z",
+      "updatedAt": "2026-04-13T08:34:25.821Z",
+      "name": "Fasting Blood Sugar",
+      "description": "Diabetes screening test",
+      "price": 199,
+      "fastingRequired": true,
+      "turnaroundTime": "12-24 hours"
+    }
+  ]
+}

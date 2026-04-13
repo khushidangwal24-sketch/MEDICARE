@@ -1,0 +1,24 @@
+.hh-section{
+  padding: 28px 0;
+}
+.hh-section-head{
+  display:flex;
+  align-items:flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+.hh-section-title{
+  margin: 0;
+  font-size: 22px;
+  letter-spacing: 0.2px;
+}
+.hh-section-sub{
+  margin: 8px 0 0 0;
+}
+.hh-section-right{
+  display:flex;
+  gap: 10px;
+  align-items:center;
+}
+
